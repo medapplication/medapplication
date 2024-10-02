@@ -45,7 +45,7 @@
             color: white;
             text-decoration: none;
             padding: 10px 20px;
-            margin: 0 5px;
+            margin: 5px;
             border-radius: 20px;
             transition: all 0.3s ease;
             display: inline-block;
@@ -53,34 +53,22 @@
         nav a:hover {
             background-color: rgba(255,255,255,0.2);
         }
-        .about-content {
+        .about-content, .vision-mission {
             background: white;
             border-radius: 20px;
             padding: 40px;
             margin-top: 40px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
-        .about-content h2 {
+        .about-content h2, .vision-mission h3 {
             color: #1a5f7a;
             font-size: 2em;
             margin-bottom: 20px;
         }
-        .about-content p {
+        .about-content p, .vision-mission p {
             color: #666;
             font-size: 1.1em;
             margin-bottom: 20px;
-        }
-        .vision-mission {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            margin-top: 40px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        .vision-mission h3 {
-            color: #1a5f7a;
-            font-size: 1.5em;
-            margin-bottom: 15px;
         }
         footer {
             background-color: #1a5f7a;
@@ -100,6 +88,21 @@
         }
         .copyright {
             font-size: 0.8em;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .about-content h2, .vision-mission h3 {
+                font-size: 1.5em;
+            }
+            .about-content p, .vision-mission p {
+                font-size: 1em;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
