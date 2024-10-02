@@ -13,11 +13,14 @@
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             color: #333;
             min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            flex-grow: 1;
         }
         header {
             background: linear-gradient(90deg, #1a5f7a, #2c3e50);
@@ -50,15 +53,14 @@
         nav a:hover {
             background-color: rgba(255,255,255,0.2);
         }
-        .hero {
+        .hero, .contact-info, .contact-form {
             background: white;
             border-radius: 20px;
             padding: 40px;
             margin-top: 40px;
-            text-align: center;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
-        .hero h2 {
+        .hero h2, .contact-info h3, .contact-form h3 {
             color: #1a5f7a;
             font-size: 2em;
             margin-bottom: 20px;
@@ -69,18 +71,6 @@
             max-width: 800px;
             margin: 0 auto 30px;
         }
-        .contact-info {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            margin-top: 40px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        .contact-info h3 {
-            color: #1a5f7a;
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
         .contact-method {
             display: flex;
             align-items: center;
@@ -90,13 +80,6 @@
             font-size: 1.5em;
             margin-right: 10px;
             color: #60a3bc;
-        }
-        .contact-form {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            margin-top: 40px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
         .form-group {
             margin-bottom: 20px;
@@ -127,6 +110,25 @@
         .submit-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #1a5f7a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        .footer-nav {
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        .footer-nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .copyright {
+            font-size: 0.8em;
         }
     </style>
 </head>
@@ -185,5 +187,5 @@
             </form>
         </section>
     </main>
-</body>
-</html>
+    <footer>
+        <div class="footer-nav">
