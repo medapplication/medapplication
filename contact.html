@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AI-Powered Home Healthcare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* (Include all the styles from the homepage and partnership page) */
+        .contact-info {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 40px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .contact-info h3 {
+            color: #1a5f7a;
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+        .contact-method {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .contact-icon {
+            font-size: 1.5em;
+            margin-right: 10px;
+            color: #60a3bc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="partnership.html">Partnership</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="hero">
+            <h2>Get in Touch</h2>
+            <p>We're here to answer your questions and discuss how our AI-powered home healthcare solutions can benefit you.</p>
+        </section>
+        <section class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="contact-method">
+                <span class="contact-icon">📞</span>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+            <div class="contact-method">
+                <span class="contact-icon">✉️</span>
+                <p>Email: info@aihomehealthcare.com</p>
+            </div>
+            <div class="contact-method">
+                <span class="contact-icon">🏢</span>
+                <p>Address: 123 AI Healthcare Ave, Innovation City, TC 12345</p>
+            </div>
+        </section>
+        <section class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="https://formspree.io/f/your_form_id" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
