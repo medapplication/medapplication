@@ -45,7 +45,7 @@
             color: white;
             text-decoration: none;
             padding: 10px 20px;
-            margin: 0 5px;
+            margin: 5px;
             border-radius: 20px;
             transition: all 0.3s ease;
             display: inline-block;
@@ -89,6 +89,7 @@
         }
         .features {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             margin-top: 40px;
         }
@@ -96,7 +97,8 @@
             background: white;
             border-radius: 20px;
             padding: 30px;
-            width: 30%;
+            width: calc(33.333% - 20px);
+            margin-bottom: 30px;
             text-align: center;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
             transition: all 0.3s ease;
@@ -135,6 +137,28 @@
         }
         .copyright {
             font-size: 0.8em;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .hero h2 {
+                font-size: 1.5em;
+            }
+            .hero p {
+                font-size: 1em;
+            }
+            .feature {
+                width: 100%;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            .cta-button {
+                display: block;
+                margin: 20px auto;
+            }
         }
     </style>
 </head>
